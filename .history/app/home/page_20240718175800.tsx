@@ -1,0 +1,36 @@
+import CardComponent from "@/components/homePage/CardComponent"
+import { Header } from "@/components/layout/Header"
+
+const HomePage = () => {
+  return (
+    <div className="grid h-screen grid-cols-1 gap-4 p-5 md:grid-cols-3">
+      <div className="col-span-2 rounded-2xl border">
+        <Header />
+        <div className="rounded-2xl border">
+          <video autoPlay muted loop id="myVideo" className="h-screen w-full">
+            <source src="/home.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 gap-4 rounded-lg">
+        <CardComponent
+          buttonTitle={"MENU SNACK"}
+          imageUrl={`bg-[url('/riz.jpeg')] bg-cover`}
+          pageUrl={"snack"}
+        />
+        <CardComponent
+          buttonTitle={"MENU CREPES / GAUFRES"}
+          imageUrl={`bg-[url('/crepes.jpg')] bg-cover`}
+          pageUrl={"snack"}
+        />
+        <CardComponent
+          buttonTitle={"NOS PARTENAIRES"}
+          imageUrl={`bg-[url('/partenaires.jpg')] bg-cover`}
+          pageUrl={"snack"}
+        />
+      </div>
+    </div>
+  )
+}
+
+export default HomePage
