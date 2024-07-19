@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div className="grid grid-cols-1 gap-5 p-5 md:grid-cols-3">
       <div className="col-span-2 rounded-2xl border">
-        <video autoPlay muted loop id="myVideo" className="rounded-2xl pb-10">
+        <video autoPlay muted loop id="myVideo" className="rounded-2xl pb-20">
           <source src="/home.mp4" type="video/mp4" />
         </video>
         <Footer />

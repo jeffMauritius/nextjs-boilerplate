@@ -1,7 +1,6 @@
 // app/layout.
 import { Footer } from "@/components/layout/Footer"
 import { Header } from "@/components/layout/Header"
-import Image from "next/image"
 import { ClerkProvider } from "@clerk/nextjs"
 import { TailwindIndicator } from "@/components/TailwindIndicator"
 import { SiteConfig } from "@/lib/config"
@@ -32,15 +31,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
         >
           <Providers>
             <div className="relative flex min-h-screen flex-col">
-              <Image
-                src="/logo.svg"
-                alt="logo"
-                width={160}
-                height={160}
-                className="z-70 absolute inset-x-0 top-0"
-              />
-              <Header />
-              {children}
+              <div>{children}</div>
             </div>
             <TailwindIndicator />
           </Providers>

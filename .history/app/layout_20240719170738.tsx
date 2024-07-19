@@ -35,11 +35,11 @@ export default function RootLayout({ children }: PropsWithChildren) {
               <Image
                 src="/logo.svg"
                 alt="logo"
-                width={160}
-                height={160}
+                width={200}
+                height={200}
                 className="z-70 absolute inset-x-0 top-0"
               />
-              <Header />
+
               {children}
             </div>
             <TailwindIndicator />

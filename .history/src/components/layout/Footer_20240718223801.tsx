@@ -7,7 +7,7 @@ import { Star } from "lucide-react"
 
 export const Footer = () => {
   return (
-    <footer className="w-6/8  z-40  border-card bg-background">
+    <footer className="w-6/8 fixed bottom-0 z-40  border-card bg-background">
       <div className="m-auto w-full max-w-4xl px-2 ">
         <div className="flex w-full items-center justify-center">
           <div className="flex flex-col gap-8 text-sm text-muted-foreground md:flex-row">
@@ -32,7 +32,7 @@ export const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="flex w-full items-center justify-center py-3">
+        <div className="flex w-full items-center justify-center pb-8">
           <Typography variant="base" className="text-xs text-muted-foreground">
             &copy; {new Date().getFullYear()} Eclats d'Eden
           </Typography>

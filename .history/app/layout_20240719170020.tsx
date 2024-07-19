@@ -32,15 +32,10 @@ export default function RootLayout({ children }: PropsWithChildren) {
         >
           <Providers>
             <div className="relative flex min-h-screen flex-col">
-              <Image
-                src="/logo.svg"
-                alt="logo"
-                width={160}
-                height={160}
-                className="z-70 absolute inset-x-0 top-0"
-              />
-              <Header />
-              {children}
+              <div className="z-70 flex justify-start">
+                <Image src="/logo.svg" alt="logo" width={200} height={200} />
+              </div>
+              <div>{children}</div>
             </div>
             <TailwindIndicator />
           </Providers>

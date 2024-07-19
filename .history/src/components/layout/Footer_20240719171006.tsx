@@ -32,7 +32,7 @@ export const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="flex w-full items-center justify-center py-3">
+        <div className="flex w-full items-center justify-center py-5">
           <Typography variant="base" className="text-xs text-muted-foreground">
             &copy; {new Date().getFullYear()} Eclats d'Eden
           </Typography>

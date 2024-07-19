@@ -1,11 +1,15 @@
 import CardComponent from "@/components/homePage/CardComponent"
 import { Footer } from "@/components/layout/Footer"
+import Image from "next/image"
 
 const HomePage = () => {
   return (
-    <div className="grid grid-cols-1 gap-5 p-5 md:grid-cols-3">
+    <div className="grid  grid-cols-1 gap-5 p-5 md:grid-cols-3">
       <div className="col-span-2 rounded-2xl border">
-        <video autoPlay muted loop id="myVideo" className="rounded-2xl pb-10">
+        <div className="flex justify-center ">
+          <Image src="/logo.svg" alt="logo" width={150} height={150} />
+        </div>
+        <video autoPlay muted loop id="myVideo" className="rounded-2xl pb-20">
           <source src="/home.mp4" type="video/mp4" />
         </video>
         <Footer />
