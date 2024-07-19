@@ -9,11 +9,9 @@ interface HomePageValues {
   pageUrl: string
 }
 
-import { ReactElement } from "react"
-
 const CardComponent = (
   config: HomePageValues,
-): ReactElement<{ buttonTitle: string; imageUrl: string; pageUrl: string }> => {
+): { buttonTitle: string; imageUrl: string; pageUrl: string } => {
   return (
     <Link
       href={`/${config.pageUrl}`}

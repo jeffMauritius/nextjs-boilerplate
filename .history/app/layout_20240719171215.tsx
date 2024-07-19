@@ -39,7 +39,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
                 height={160}
                 className="z-70 absolute inset-x-0 top-0"
               />
-              <Header />
+              <div>test</div>
               {children}
             </div>
             <TailwindIndicator />

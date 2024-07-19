@@ -1,7 +1,6 @@
 // app/layout.
 import { Footer } from "@/components/layout/Footer"
 import { Header } from "@/components/layout/Header"
-import Image from "next/image"
 import { ClerkProvider } from "@clerk/nextjs"
 import { TailwindIndicator } from "@/components/TailwindIndicator"
 import { SiteConfig } from "@/lib/config"
@@ -10,12 +9,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { PropsWithChildren } from "react"
 import { Providers } from "./Providers"
-import "./globals.css"
-
-const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" })
-
-export const metadata: Metadata = {
-  title: SiteConfig.title,
+: SiteConfig.title,
   description: SiteConfig.description,
 }
 
@@ -32,15 +26,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
         >
           <Providers>
             <div className="relative flex min-h-screen flex-col">
-              <Image
-                src="/logo.svg"
-                alt="logo"
-                width={160}
-                height={160}
-                className="z-70 absolute inset-x-0 top-0"
-              />
-              <Header />
-              {children}
+              <div>{children}</div>
             </div>
             <TailwindIndicator />
           </Providers>
