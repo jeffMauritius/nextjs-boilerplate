@@ -22,7 +22,7 @@ export const Footer = () => {
               <PhoneCall />
               +230 5798 8786
             </Link>
-            <Link className="flex gap-4 hover:underline" href="/information">
+            <Link className="flex gap-4 hover:underline" href="/courses">
               <Clock />
               Horaires d&apos;ouverture
             </Link>

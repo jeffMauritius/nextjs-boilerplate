@@ -8,7 +8,7 @@ export default function Crepes() {
           <source src="/crepes.mp4" type="video/mp4" />
         </video>
         <div className="absolute left-10 top-72 flex justify-center ">
-          <p className="rounded-2xl  bg-black p-5 text-7xl text-white opacity-35">
+          <p className="rounded-2xl  bg-black p-5 text-7xl text-white opacity-75">
             Crépes & Gauffres
           </p>
         </div>

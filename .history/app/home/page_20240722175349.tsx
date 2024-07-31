@@ -3,8 +3,8 @@ import { Footer } from "@/components/layout/Footer"
 
 const HomePage = () => {
   return (
-    <div className="grid gap-5 p-5 md:grid-cols-3">
-      <div className="col-span-1 rounded-2xl border md:col-span-2">
+    <div className="grid grid-cols-1 gap-5 p-5 md:grid-cols-3">
+      <div className="rounded-2xl border md:col-span-2">
         <video autoPlay muted loop id="myVideo" className="rounded-2xl pb-10">
           <source src="/home.mp4" type="video/mp4" />
         </video>

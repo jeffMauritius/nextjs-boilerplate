@@ -13,7 +13,7 @@ export default function Crepes() {
           </p>
         </div>
       </div>
-      <div className="rounded-2xl border">
+      <div className="overflow rounded-2xl border">
         <MenuComponent menuTitle={"NOS CREPES"} type="crepes" />
         <MenuComponent menuTitle={"NOS GAUFFRES"} type="gauffres" />
       </div>

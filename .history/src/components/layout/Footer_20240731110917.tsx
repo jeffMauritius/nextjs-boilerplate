@@ -13,7 +13,7 @@ export const Footer = () => {
           <div className="flex flex-col gap-8 text-sm text-muted-foreground md:flex-row">
             <Link
               className="flex gap-4 hover:underline sm:flex-row"
-              href="/information"
+              href="/localisation"
             >
               <MapPin />
               La Cuvette Beach, Grand Baie, Île Maurice
@@ -22,7 +22,7 @@ export const Footer = () => {
               <PhoneCall />
               +230 5798 8786
             </Link>
-            <Link className="flex gap-4 hover:underline" href="/information">
+            <Link className="flex gap-4 hover:underline" href="/courses">
               <Clock />
               Horaires d&apos;ouverture
             </Link>
