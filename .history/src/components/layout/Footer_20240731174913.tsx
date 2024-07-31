@@ -24,7 +24,7 @@ export const Footer = () => {
             </Link>
             <Link className="flex gap-4 hover:underline" href="/information">
               <Clock />
-              <p>Horaires d ouverture</p>
+              <p>Horaires d'ouverture</p>
             </Link>
             <Link className="flex gap-4 hover:underline" href="/admin">
               <Star />
