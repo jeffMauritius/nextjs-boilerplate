@@ -1,5 +1,5 @@
-//import Image from "next/image"
-//import { ThemeToggle } from "../ThemeToggle"
+import Image from "next/image"
+import { ThemeToggle } from "../ThemeToggle"
 
 export function Header() {
   return (

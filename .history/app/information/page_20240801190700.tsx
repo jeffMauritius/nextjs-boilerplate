@@ -11,12 +11,14 @@ export default function Information() {
       </div>
       <div className="grid grid-cols-2 gap-6">
         <div>
+          <div className="p-5 text-center">Nous localiser</div>
           <div className="rounded border p-5">
             <Localization />
           </div>
         </div>
         <div>
-          <div className="rounded border p-10">
+          <div className="p-5 text-center">{`Nos horaires d'ouverture`}</div>
+          <div className="rounded border p-5">
             {schedule.map((day, index) => (
               <div
                 key={index}

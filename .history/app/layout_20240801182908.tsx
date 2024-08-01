@@ -34,7 +34,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       >
         <Providers>
           <div className="relative flex min-h-screen flex-col">
-            <Header />
+            <Header fontTitle={fontDisplay} />
             {children}
           </div>
           <TailwindIndicator />

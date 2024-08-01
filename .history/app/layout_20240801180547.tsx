@@ -29,12 +29,11 @@ export default function RootLayout({ children }: PropsWithChildren) {
         className={cn(
           `h-full bg-background font-sans antialiased`,
           fontSans.variable,
-          fontDisplay.variable,
         )}
       >
         <Providers>
           <div className="relative flex min-h-screen flex-col">
-            <Header />
+            <Header fontTitle={fontDisplay} />
             {children}
           </div>
           <TailwindIndicator />

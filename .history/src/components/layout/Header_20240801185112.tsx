@@ -1,5 +1,5 @@
-//import Image from "next/image"
-//import { ThemeToggle } from "../ThemeToggle"
+import Image from "next/image"
+import { ThemeToggle } from "../ThemeToggle"
 
 export function Header() {
   return (
@@ -17,13 +17,11 @@ export function Header() {
             height={100}
             className="rounded-full"*/}
         </div>
-        {/**
-         * <div className="flex items-center justify-end space-x-5">
+        <div className="flex items-center justify-end space-x-5">
           <nav className="flex items-center space-x-1">
             <ThemeToggle />
           </nav>
         </div>
-         */}
       </div>
     </header>
   )

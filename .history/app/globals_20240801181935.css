@@ -71,11 +71,11 @@
       @apply border-border;
     }
     @font-face {
-      font-family: 'Marck Script';
+      font-family: 'Roboto';
       font-style: normal;
       font-weight: 400;
       font-display: swap;
-      src: url(/fonts/MarckScript-Regular.ttf) format('ttf');
+      src: url(/fonts/Roboto.woff2) format('woff2');
     }
     body {
       @apply bg-background text-foreground;

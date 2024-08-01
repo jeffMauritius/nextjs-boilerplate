@@ -18,7 +18,7 @@ const config = {
       },
     },
     fontFamily: {
-      'display': ['"Marck Script"', 'cursive'],
+      'display': ['Oswald'],
       'body': ['"Open Sans"', 'sans-serif'],
     },
     extend: {

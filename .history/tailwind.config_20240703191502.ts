@@ -17,10 +17,6 @@ const config = {
         "2xl": "1400px",
       },
     },
-    fontFamily: {
-      'display': ['"Marck Script"', 'cursive'],
-      'body': ['"Open Sans"', 'sans-serif'],
-    },
     extend: {
       colors: {
         border: "hsl(var(--border))",

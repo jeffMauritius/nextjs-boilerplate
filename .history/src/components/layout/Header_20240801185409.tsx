@@ -1,5 +1,5 @@
-//import Image from "next/image"
-//import { ThemeToggle } from "../ThemeToggle"
+import Image from "next/image"
+import { ThemeToggle } from "../ThemeToggle"
 
 export function Header() {
   return (
@@ -10,12 +10,15 @@ export function Header() {
             {" "}
             {`~ Éclats d'éden ~`}
           </h1>
-          {/* <Image
+        </div>
+        <div className="flex flex-auto justify-center ">
+          <Image
             src="/logo.png"
             alt="logo"
             width={100}
             height={100}
-            className="rounded-full"*/}
+            className="rounded-full"
+          />
         </div>
         {/**
          * <div className="flex items-center justify-end space-x-5">

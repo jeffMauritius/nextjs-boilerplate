@@ -16,7 +16,7 @@ export default function Information() {
           </div>
         </div>
         <div>
-          <div className="rounded border p-10">
+          <div className="rounded border p-5">
             {schedule.map((day, index) => (
               <div
                 key={index}
