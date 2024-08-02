@@ -1,5 +1,10 @@
 import MenuItems from "./MenuItems"
-import { menuCrepes, menuGauffres, menuSnack } from "./data"
+import {
+  menuCrepesSalees,
+  menuCrepesSucrees,
+  menuSnack,
+  boissons,
+} from "./data"
 
 interface MenuComponentProps {
   menuTitle: string
@@ -20,8 +25,8 @@ const MenuComponent = ({ menuTitle, type }: MenuComponentProps) => {
             imageUrl={item.imageUrl}
           />
         ))}
-      {type === "crepes" &&
-        menuCrepes.map(item => (
+      {type === "crepes-sucrees" &&
+        menuCrepesSucrees.map(item => (
           <MenuItems
             key={item.id}
             menuTitle={item.menuTitle}
@@ -30,8 +35,18 @@ const MenuComponent = ({ menuTitle, type }: MenuComponentProps) => {
             imageUrl={item.imageUrl}
           />
         ))}
-      {type === "gauffres" &&
-        menuGauffres.map(item => (
+      {type === "crepes-salees" &&
+        menuCrepesSalees.map(item => (
+          <MenuItems
+            key={item.id}
+            menuTitle={item.menuTitle}
+            price={item.price}
+            description={item.description}
+            imageUrl={item.imageUrl}
+          />
+        ))}
+      {type === "boissons" &&
+        boissons.map(item => (
           <MenuItems
             key={item.id}
             menuTitle={item.menuTitle}

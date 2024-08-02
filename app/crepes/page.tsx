@@ -8,14 +8,14 @@ export default function Crepes() {
           <source src="/crepes.mp4" type="video/mp4" />
         </video>
         <div className="absolute left-10 top-72 flex justify-center ">
-          <p className="rounded-2xl  bg-black p-5 text-7xl text-white opacity-35">
-            Crépes & Gauffres
+          <p className="rounded-2xl  bg-black p-5 text-5xl text-white opacity-35">
+            Crépes sucrées & salées
           </p>
         </div>
       </div>
       <div className="rounded-2xl border">
-        <MenuComponent menuTitle={"NOS CREPES"} type="crepes" />
-        <MenuComponent menuTitle={"NOS GAUFFRES"} type="gauffres" />
+        <MenuComponent menuTitle={"NOS CREPES SALEES"} type="crepes-salees" />
+        <MenuComponent menuTitle={"NOS CREPES SUCREES"} type="crepes-sucrees" />
       </div>
     </div>
   )
