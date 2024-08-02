@@ -11,7 +11,7 @@ export function Header() {
             {`~ Éclats d'éden ~`}
           </h1>
         </div>
-        <div className="flex flex-auto justify-center py-3">
+        <div className="flex flex-auto justify-center pt-3">
           <NavigationMenuComponent />
           <ThemeToggle />
         </div>
